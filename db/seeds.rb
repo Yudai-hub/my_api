@@ -6,7 +6,7 @@
 end
 
 require "csv"
-CSV.foreach("/Users/tokiyoshiyuudai/Desktop/my_api/cars.csv", headers: true) do |row|
+CSV.foreach("cars.csv", headers: true) do |row|
   Car.create(
     id: row[0],
     car_id: row[1],
