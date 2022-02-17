@@ -1,3 +1,4 @@
+Article.delete_all
 5.times do
   Article.create(
     title: Faker::Book.title,
@@ -6,13 +7,13 @@
 end
 
 require "csv"
+Car.delete_all
 CSV.foreach("cars.csv", headers: true) do |row|
   Car.create(
-    id: row[0],
-    car_id: row[1],
-    maker: row[2],
-    model: row[3],
-    VClass: row[4],
-    make_year: row[5]
+    car_id: row[0],
+    maker: row[1],
+    model: row[2],
+    VClass: row[3],
+    make_year: row[4]
   )
 end
