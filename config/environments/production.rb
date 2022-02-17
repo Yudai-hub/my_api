@@ -111,5 +111,5 @@ Rails.application.configure do
   # config.active_record.database_resolver = ActiveRecord::Middleware::DatabaseSelector::Resolver
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 
-  # Rails.application.config.hosts << "http://127.0.0.1:3000/"
+  # Rails.application.config.hosts << "http://127.0.0.1:3000"
 end
