@@ -14,6 +14,7 @@ CSV.foreach("cars.csv", headers: true) do |row|
     maker: row[1],
     model: row[2],
     VClass: row[3],
-    make_year: row[4]
+    make_year: row[4],
+    region: row[5]
   )
 end
